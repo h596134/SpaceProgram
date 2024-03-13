@@ -1,0 +1,42 @@
+﻿<Window  x:Class="WPFApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!-- TextBlocks for labels -->
+
+    <Canvas Name="draw">
+        <ComboBox x:Name="PlanetComboBox" SelectionChanged="PlanetComboBox_SelectionChanged"
+          Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-300">
+            <ComboBoxItem Content="All"/>
+            <ComboBoxItem Content="TheSun"/>
+            <ComboBoxItem Content="Mercury"/>
+            <ComboBoxItem Content="Venus"/>
+            <ComboBoxItem Content="Earth"/>
+            <ComboBoxItem Content="Mars"/>
+            <ComboBoxItem Content="Jupiter"/>
+            <ComboBoxItem Content="Saturn"/>
+            <ComboBoxItem Content="Uranus"/>
+            <ComboBoxItem Content="Neptune"/>
+        </ComboBox>
+
+
+        <TextBlock x:Name="TheSunLabel" Text="Sun" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Visible" Canvas.Left="341" Canvas.Top="33"/>
+        <TextBlock x:Name="MercuryLabel" Text="Mercury" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="50,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+        <TextBlock x:Name="VenusLabel" Text="Venus" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+        <TextBlock x:Name="EarthLabel" Text="Earth" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="150,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+        <TextBlock x:Name="MarsLabel" Text="Mars" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="200,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+        <TextBlock x:Name="JupiterLabel" Text="Jupiter" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="250,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+        <TextBlock x:Name="SaturnLabel" Text="Saturn" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="300,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+        <TextBlock x:Name="UranusLabel" Text="Uranus" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="350,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+        <TextBlock x:Name="NeptuneLabel" Text="Neptune" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="400,0,0,20" FontSize="16" FontWeight="Bold" Foreground="White" Visibility="Visible"/>
+
+        <!-- ComboBox for selecting planets -->
+        
+    </Canvas>
+</Window>
+
