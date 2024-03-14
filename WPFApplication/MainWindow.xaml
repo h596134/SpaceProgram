@@ -11,18 +11,8 @@
 
     <Canvas Name="draw">
         <ComboBox x:Name="PlanetComboBox" SelectionChanged="PlanetComboBox_SelectionChanged"
-          Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-300">
-            <ComboBoxItem Content="All"/>
-            <ComboBoxItem Content="TheSun"/>
-            <ComboBoxItem Content="Mercury"/>
-            <ComboBoxItem Content="Venus"/>
-            <ComboBoxItem Content="Earth"/>
-            <ComboBoxItem Content="Mars"/>
-            <ComboBoxItem Content="Jupiter"/>
-            <ComboBoxItem Content="Saturn"/>
-            <ComboBoxItem Content="Uranus"/>
-            <ComboBoxItem Content="Neptune"/>
-        </ComboBox>
+          Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-300"/>
+
 
 
         <TextBlock x:Name="TheSunLabel" Text="Sun" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Visible" Canvas.Left="341" Canvas.Top="33"/>
